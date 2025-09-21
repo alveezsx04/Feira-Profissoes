@@ -1,0 +1,124 @@
+.hero-section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('/assets/images/hero-background.png') no-repeat center center/cover;
+  color: #fff;
+  overflow: hidden;
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 21, 128, 0.4);
+    backdrop-filter: blur(2px);
+    z-index: 1;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 800px;
+    padding: 0 1rem;
+
+    h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+
+      sup {
+        font-size: 1.5rem;
+      }
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      font-weight: 400;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+
+      a {
+        display: inline-block;
+        font-weight: 700;
+        padding: 15px 35px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #fff;
+        background-color: #001050;
+        box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.4);
+        transition: all 0.3s ease;
+
+        &:hover {
+          background-color: #002080;
+          transform: translateY(-5px);
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+      }
+    }
+
+    .evento-info {
+      margin-top: 2rem;
+      text-align: center;
+      color: #fff;
+
+      h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+        margin: 0.2rem 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    h1 {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+
+    .hero-buttons a {
+      width: 100%;
+      text-align: center;
+    }
+
+    .evento-info {
+      h3 {
+        font-size: 1.3rem;
+      }
+
+      p {
+        font-size: 0.95rem;
+      }
+    }
+  }
+}

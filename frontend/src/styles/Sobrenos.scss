@@ -1,0 +1,213 @@
+.sobre {
+
+  section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    h2 {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #000000;
+    }
+
+    p {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #000000;
+    }
+  }
+
+  /* Fundação */
+  .fundacao {
+    background: #f9f9f9;
+
+    &__content {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__item {
+      flex: 1 1 300px;
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+
+      h3 {
+        color: #000000;
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+
+      span {
+        font-size: 0.95rem;
+        color: #000000;
+      }
+    }
+  }
+
+  /* Legado */
+  .legado {
+    background: #fff;
+
+    &__box {
+      margin: 2rem auto;
+      padding: 1.5rem;
+      border-left: 6px solid #3498db;
+      background: #f0f8ff;
+      border-radius: 8px;
+      max-width: 700px;
+      text-align: center;
+
+      h3 {
+        margin-bottom: 0.5rem;
+        color: #000000;
+      }
+    }
+  }
+
+  /* Impacto */
+  .impacto {
+    background: #f9f9f9;
+
+    &__cards {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+
+    .card {
+      flex: 1 1 200px;
+      background: white;
+      border-radius: 12px;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+      h3 {
+        font-size: 1.8rem;
+        color: #27ae60;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+        color: #555;
+      }
+    }
+  }
+
+  .mvv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    background: #fff;
+
+    &__item {
+      flex: 1 1 300px;
+      background: #f9f9f9;
+      padding: 2rem;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+      img {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 1rem;
+      }
+
+      h3 {
+        margin-bottom: 1rem;
+        color: #000000;
+      }
+
+      p {
+        font-size: 0.95rem;
+        color: #000000;
+      }
+    }
+  }
+
+  .depoimento {
+    background: #f0f0f0; 
+    padding: 6rem 2rem 2rem;
+
+    h2 {
+      color: #001580; 
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    &__content {
+      display: flex;
+      align-items: center;
+      max-width: 800px;
+      margin: 0 auto;
+      background: #001580; 
+      padding: 2rem 2rem 2rem 140px; 
+      position: relative;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+
+      .depoimento__foto {
+        width: 220px;
+        height: auto;
+        object-fit: cover;
+        position: absolute;
+        left: -150px; 
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      p {
+        flex: 1;
+        font-size: 1rem;
+        color: #FFFFFF;
+
+        strong {
+          display: block;
+          margin-top: 1rem;
+          font-weight: bold;
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .sobre {
+    section {
+      padding: 3rem 1rem;
+    }
+
+    .fundacao__content,
+    .impacto__cards,
+    .mvv,
+    .depoimento__content {
+      flex-direction: column;
+      align-items: center;
+      padding-left: 2rem !important; 
+    }
+
+    .depoimento__foto {
+      position: static;
+      transform: none;
+      margin-bottom: 1rem;
+    }
+  }
+}
